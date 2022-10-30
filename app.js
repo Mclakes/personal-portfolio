@@ -33,6 +33,8 @@ function PageTransitions() {
             element.classList.add('active')
         }
     })
+    // toggle theme
+    const themeBtn = document.querySelector(".theme-btn")
 }
 
 PageTransitions();
