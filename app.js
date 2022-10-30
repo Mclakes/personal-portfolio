@@ -34,7 +34,7 @@ function PageTransitions() {
         }
     })
     // toggle theme
-    const themeBtn = document.querySelector(".theme-btn")
+    // const themeBtn = document.querySelector()git 
 }
 
 PageTransitions();
