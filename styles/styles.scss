@@ -21,6 +21,20 @@
     --transition: all .4s ease-in-out;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .2);
 }
+.light-mode {
+    --color-primary:#ffffff;
+    --color-secondary: #f56692;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey-0: #f8f8f8;
+    --color-grey-1: #6c7983;
+    --color-grey-2: #6c7983;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #b2becd;
+    --color-grey-6: #12181b;
+}
+
 body {
     background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
@@ -38,6 +52,10 @@ header{
     height: 100vh;
     color: var(--color-white);
     overflow: hidden;
+    // @media screen and (max-width:600px) {
+    //     height: max-content;
+    //     min-height: 100vh;
+    // }
 }
 section {
     min-height: 100vh;
@@ -46,6 +64,9 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
+    // @media screen and (max-width:600px) {
+    //     padding: 2rem 2.5rem;
+    // }
 }
 .section {
     transform: translateY(-100%) scale(0);
@@ -123,25 +144,6 @@ section {
 
 }
 
-// .theme-btn{
-//     padding: 1rem;
-//     cursor: pointer;
-//     background-color: var(--color-grey-4);
-//     width: 55px;
-//     height: 55px;
-//     border-radius: 50%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: .7rem;
-//     box-shadow: 0 3px 15px rgba(0,0,0,.2);
-//     i{
-//         font-size: 1.2rem;
-//         color: var(--color-grey-2);
-//         pointer-events: none;
-//     }
-// }
-
 .theme-btn {
     top: 5%;
     right: 3%;
@@ -162,7 +164,7 @@ section {
     }
     i{
         font-size: 1.4rem;
-        color: var(--color-grey-4);
+        color: var(--color-grey-2);
         pointer-events: none;
     }
 
@@ -235,6 +237,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    
     .right-about {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -739,3 +742,5 @@ section {
 .portfolio .main-title .work {
     transform: translate(-50%, -55%);
 }
+
+@import "./media.scss"
