@@ -99,16 +99,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -236,7 +227,12 @@ section {
 }
 .header-content .right-header p {
   margin: 1.5rem 0;
-  line-height: 2rem;
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+}
+
+.port {
+  padding-top: 1rem;
 }
 
 .about-container {
@@ -418,7 +414,6 @@ section {
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, -webkit-min-content);
   grid-template-rows: repeat(3, min-content);
   grid-gap: 2rem;
   border-radius: 15px;
@@ -857,7 +852,6 @@ section {
 @media screen and (max-width: 700px) {
   header {
     padding: 0;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     min-height: 100vh;
@@ -892,7 +886,6 @@ section {
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     min-height: 100vh;
