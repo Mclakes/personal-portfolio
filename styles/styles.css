@@ -234,6 +234,9 @@ section {
 .port {
   padding-top: 1rem;
 }
+.port a:last-child {
+  margin-left: 2rem;
+}
 
 .about-container {
   display: grid;
